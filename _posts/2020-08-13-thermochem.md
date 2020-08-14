@@ -44,7 +44,7 @@ It's usually the case that the temperature and pressure are positive and so all 
 * With minimal volume
 * At low energy
 
-What a balancing act! When we think we have a good answer (an energy, entropy, and volume for a set of particles in the box), we package the result in what we will call the "molecular chemical potential" (MCP, $\mu_{mol}$):
+What a balancing act! When we think we have a good answer (an energy, entropy, and volume for a set of particles in the box), we package the result in what we will call the **molecular chemical potential** ($\mu_{mol}$):
 
 $$
 \mu_{mol}(U_{mol},V_{mol},S_{mol}) = U_{mol} + PV_{mol} - TS_{mol}
@@ -66,9 +66,9 @@ $$
 G_{sys} = \sum_i^{molecules} N_i \mu_i
 $$
 
-3) **The molecular chemical potentials of identical molecules in the system are always identical**
-
-4) **The goal of any system is to minimize its free energy**
+<!-- 3) **The molecular chemical potentials of identical molecules in the system are always identical**
+ -->
+3) **The goal of any system is to minimize its free energy**
 
 
 
@@ -78,7 +78,7 @@ Okay, so, if molecules are boxes, how do reactions happen? Easier than you might
 
 We will define a chemical reaction as follows:
 
-* A chemical reaction is a transformation of a system from one set of boxes to another that conserves the number of nuclei and electrons.
+* A chemical reaction is a transformation of a system from one set of boxes to another that **conserves the number of nuclei and electrons**.
 
 This is quite a general process! Hence, chemistry is a very general topic.
 
@@ -99,8 +99,6 @@ $$
 So this reaction, of course, goes essentially to completion. This also means that an empty box will destroy itself:
 
 ![image.png](/images/2020-08-13-thermochem_files/att_00002.png)
-
-Where evidently,
 
 $$
 \Delta \mu_{rxn} = \mu_{products} - \mu_{reactants} = 0 - PV = -PV
@@ -135,7 +133,9 @@ $$
 H = T_n + T_e + U_{en} + U_{nn} + U_{ee}
 $$
 
-Clearly the last four terms all go to zero. But the kinetic energy of the proton is very much non-zero! So, where is the remaining energy? To find out, we will need to introduce some approximations:
+Clearly the last four terms all go to zero. But the kinetic energy of the proton is very much non-zero!
+
+So, **where is the remaining energy?** To find out, we will need to introduce some approximations:
 
 ## The Born-Oppenheimer Approximation
 
@@ -147,11 +147,11 @@ $$
 
 More physically, it can be stated as:
 
-* **Nuclei essentially exist on an energy surface defined by the electronic energy and the nuclear repulsion at any given point in 3N-space** (where N is the number of nuclei in the molecule)
+* **Nuclei exist on an energy surface defined by the electronic energy and the nuclear repulsion at any given point in 3N-space** (where N is the number of nuclei in the molecule)
 
-So electronic structure packages make it their goal to define this surface. This surface is sometimes called the "potential energy surface",but this is a misnomer in my opinion because the energy clearly involves the kinetic energy of the electrons.
+**Electronic structure packages make it their goal to define this surface.** This surface is sometimes called the "potential energy surface", but this is a misnomer in my opinion because the energy clearly involves the kinetic energy of the electrons.
 
-The intuition here is roughly that the electrons are much faster than the nuclei, and so we can effectively treat the electrons separately for any position of the nuclear coordinates and vice-versa. Our Hamiltonian is then also naturally split as a tensor product:
+Regardless, the intuition behind the Born-Oppenheimer approximation is that the electrons are much faster than the nuclei, and so we can effectively treat the electrons separately for any position of the nuclear coordinates and vice-versa. Our Hamiltonian is then also naturally split as a tensor product:
 
 $$
 H = H_{nuc} \otimes I + I \otimes H_{elec}
@@ -171,11 +171,11 @@ $$
 
 where $E_{SCF}$ is meant to invoke "output of your computer program" (of course whether you used an SCF method or not is irrelevant).
 
-So, how do we recover the rest of the nuclear energy, that our electronic structure program has so terribly forgotten? We simply follow the Born-Oppenheimer approximation to a t:
+So, how do we recover the rest of the nuclear energy, that our electronic structure program has so terribly forgotten? We follow the Born-Oppenheimer approximation:
 
 * **To get the rest of the nuclear energy, the wavefunctions of the nuclear degrees of freedom are solved for on a potential energy surface defined by $E_{SCF}$**
 
-However, it turns out that the splitting between the levels of these degrees of freedom is quite small (comparable to kT). Thus, we will need to introduce:
+However, it turns out that the splitting between the levels of these degrees of freedom is quite small (comparable to kT). This requires us to introduce:
 
 
 ## The Statistical Approximation
@@ -345,7 +345,7 @@ $$
 \frac{\partial \mu}{\partial V} = P - kT (\frac{1}{\lambda^3})(\frac{1}{\frac{V}{\lambda^3}}) = P - \frac{kT}{V} = 0
 $$
 
-Rearranging, you will note that this is simply the one-particle ideal gas law!
+Rearranging, you will note that **this is simply the one-particle ideal gas law**!
 
 $$
 P V = k T
@@ -355,7 +355,7 @@ Thus, **the ideal gas law is a direct result of the minimization of the chemical
 
 I think that's really cool! We were able to treat our proton completely quantum-statistically and pull out an observed behavior of gasses in the real world.
 
-Unfortunately this post is getting a bit long, so I am choosing to end here for now (I have a WPE to prepare for!). To all of you who got this far, I hope you found it useful. In future posts I plan to cover:
+Unfortunately this post is getting a bit long, so I am choosing to end here for now. To all of you who got this far, I hope you found it useful. In future posts I plan to cover:
 
 * Chemical reactions with more than one type particle
 * Chemical reactions of moles of particles
