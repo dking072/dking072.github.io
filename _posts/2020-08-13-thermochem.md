@@ -6,7 +6,7 @@ If you've taken a class in chemistry, you've doubtless idolized thermochemical t
 
 If you've taken a class in electronic structure theory, all you probably got was $E$.
 
-To add to the pain, classes that emphasize $G$ will often nicely cover the thermochemical derivations but are unlikely to address how to interface with actual electronic structure calculations!
+To add to the pain, classes like statistical mechanics will often nicely cover the thermochemical derivations but are unlikely to address how to interface with actual electronic structure calculations!
 
 **Unfortunately, I think many students (as I did) walk away not really knowing how to interface between E and G**. In many labs I've been in, a script just gets passed around with the promise of *this handles all the thermochemistry, don't worry about it*. 
 
