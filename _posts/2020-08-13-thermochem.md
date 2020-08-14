@@ -1,4 +1,4 @@
-# Molecule in a Box: Roadmap From E to G
+# Molecule in a Box: From E to G
 
 
 
@@ -17,7 +17,7 @@ If you are just starting out like I was, I hope this series of posts helps you g
 Kind of. What do I mean? I mean that as a pedagogical tool for thermochemistry, **it is helpful to think of the volume the molecule exists in as an inherent property of the molecule itself**. Let's get more concrete. Our molecule will have:
 
 * Volume $V$
-* A ($N_{nuc}$,$N_{elec}$)-body wavefunction given by |$\psi_{nuc,elec}$>,
+* A ($N_{nuc}$,$N_{elec}$)-body wavefunction given by $[\psi_{nuc,elec}>$,
 * A Hamiltonian, given by (in the non-relativistic case):
 
 $$
@@ -125,11 +125,6 @@ mf.kernel()
 ```
 
     converged SCF energy = 0
-
-
-
-
-
     0.0
 
 
@@ -185,7 +180,7 @@ However, it turns out that the splitting between the levels of these degrees of 
 
 ## The Statistical Approximation
 
-At finite temperatures, we need to start treating our molecule as a statistical distribution of states. The key assumption we make is that at conserved energy the system samples all all accessible states |$\psi_{nuc,elec}$> with equal probability.
+At finite temperatures, we need to start treating our molecule as a statistical distribution of states. The key assumption we make is that at conserved energy the system samples all all accessible states $[\psi_{nuc,elec}>$ with equal probability.
 
 It turns out that **at a set *temperature*, this assumption actually means that states become exponentially less likely according to their energy**. We can describe the probability of any given state of our molecule as
 
