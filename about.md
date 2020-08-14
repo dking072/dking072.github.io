@@ -1,6 +1,6 @@
 # About
 
-##Hi there!
+## Hi there!
 
 I am a graduate student at the University of Minnesota pursuing a PhD in computational chemistry.
 
