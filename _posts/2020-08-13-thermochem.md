@@ -17,7 +17,7 @@ If you are just starting out like I was, I hope this series of posts helps you g
 Kind of. What do I mean? I mean that as a pedagogical tool for thermochemistry, **it is helpful to think of the volume the molecule exists in as an inherent property of the molecule itself**. Let's get more concrete. Our molecule will have:
 
 * Volume $V$
-* A ($N_{nuc}$,$N_{elec}$)-body wavefunction given by $|\psi_{nuc,elec}>$,
+* A ($N_{nuc}$,$N_{elec}$)-body wavefunction given by |$\psi_{nuc,elec}$>,
 * A Hamiltonian, given by (in the non-relativistic case):
 
 $$
@@ -30,7 +30,7 @@ where we have in order the kinetic energy of the nuclei, electrons, and mix-matc
 
 Below is I hope a helpful image for thinking about the "molecule as a box" concept:
 
-![image.png](2020-08-13-thermochem_files/att_00000.png)
+![image.png](/images/2020-08-13-thermochem_files/att_00000.png)
 
 The environment has several variables which define various "costs" for our molecule (kind of like universal "rent"):
 
@@ -86,7 +86,7 @@ This is quite a general process! Hence, chemistry is a very general topic.
 
 Note that our definition of a chemical reaction is perfectly fine with destroying *boxes*, just not the particles inside them. For example, consider the reaction of two empty boxes:
 
-![image.png](2020-08-13-thermochem_files/att_00001.png)
+![image.png](/images/2020-08-13-thermochem_files/att_00001.png)
 
 How do we calculate the "change in free energy" of this reaction? It is simple: **to calculate the free energy of a reaction, calculate the chemical potentials on both sides and take the difference**. 
 
@@ -98,7 +98,7 @@ $$
 
 So this reaction, of course, goes essentially to completion. This also means that an empty box will destroy itself:
 
-![image.png](2020-08-13-thermochem_files/att_00002.png)
+![image.png](/images/2020-08-13-thermochem_files/att_00002.png)
 
 Where evidently,
 
@@ -185,7 +185,7 @@ However, it turns out that the splitting between the levels of these degrees of 
 
 ## The Statistical Approximation
 
-At finite temperatures, we need to start treating our molecule as a statistical distribution of states. The key assumption we make is that at conserved energy the system samples all all accessible states $|\psi_{nuc,elec}>_j$ with equal probability.
+At finite temperatures, we need to start treating our molecule as a statistical distribution of states. The key assumption we make is that at conserved energy the system samples all all accessible states |$\psi_{nuc,elec}$> with equal probability.
 
 It turns out that **at a set *temperature*, this assumption actually means that states become exponentially less likely according to their energy**. We can describe the probability of any given state of our molecule as
 
