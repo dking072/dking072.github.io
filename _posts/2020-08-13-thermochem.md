@@ -56,7 +56,7 @@ $$
 U_{mol} = E_{mol} + ZPVE_{mol} + U_{T,mol}
 $$
 
-Finally, if you take away anything from this post, let it be these four points:
+Finally, if you take away anything from this post, let it be these three points:
 
 1) **The output of an electronic structure package (e.g. Gaussian) is generally only the first term in the internal energy, $E_{mol}$**.
 
