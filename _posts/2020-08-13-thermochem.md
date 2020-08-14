@@ -1,4 +1,4 @@
-# Molecule in a Box: A Roadmap from E to G
+# Molecule in a Box: Roadmap From E to G
 
 
 
@@ -17,7 +17,7 @@ If you are just starting out like I was, I hope this series of posts helps you g
 Kind of. What do I mean? I mean that as a pedagogical tool for thermochemistry, **it is helpful to think of the volume the molecule exists in as an inherent property of the molecule itself**. Let's get more concrete. Our molecule will have:
 
 * Volume $V$
-* A N-body wavefunction given by $|\psi_{nuc,elec}>$,
+* A ($N_{nuc}$,$N_{elec}$)-body wavefunction given by $|\psi_{nuc,elec}>$,
 * A Hamiltonian, given by (in the non-relativistic case):
 
 $$
